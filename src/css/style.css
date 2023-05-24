@@ -36,8 +36,7 @@ body {
 }
 
 .box {
-  height: 60vh;
-  width: 400px;
+  padding: 40px;
   margin: 20px;
   background-color: #8294c44c;
   display: flex;
@@ -50,15 +49,15 @@ body {
 }
 
 .play {
-  height: 20vh;
-  width: 20vh; 
+  height: 110px;
+  width: 110px; 
   margin: 20px;
   background-color: #acb1d688;
   border-radius: 50% / 10%;
   display: flex;
   text-align: center;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 24px;
   box-shadow: 2px 2px 5px 5px #dbdfeadc;
   align-items: center;
   justify-content: center;
@@ -69,12 +68,6 @@ body {
     width: 25vh; 
   }
 
-  .play-box{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .player-game-image, .computer-game-image{
     height: 25vh;
@@ -94,9 +87,12 @@ body {
   }
   
   .play-box{
-    height: 35vh;
-    width: 45vh;
+    height: 200px;
+    width: 300px;
     background-color:rgba(255, 255, 255, 0.596) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .player-area{
@@ -126,31 +122,6 @@ body {
  flex-wrap: wrap;
 }
 
-  @media screen and (max-width:1100px) {
-    .game{
-      flex-direction: column-reverse;
-
-    }
-  }
-
-
-
-@media screen and (orientation: portrait) {
-    .title{
-        justify-content: center;
-        width: 400px;
-    }
-    .title p{
-        width: 90%;
-    }
-    .game {
-      justify-content: center;
-    }
-
-    .box{ 
-        justify-content: center;
-    }
-  }
 
   #playerDialogBox, #computerDialogBox { 
     display: none;
@@ -183,4 +154,62 @@ body {
     padding: 10px 40px;
     border: none;
     font-weight: bold;
+  }
+
+  
+  @media screen and (max-width:1100px) {
+    .game{
+      flex-direction: column-reverse;
+
+    }
+  }
+
+
+
+@media screen and (orientation: portrait) {
+  body{
+    justify-content: center;
+    overflow-x: hidden;
+  }
+    .title{
+        justify-content: center;
+        width: 300px;
+        font-size: 12px;
+    }
+    .title p{
+        width: 300px;
+    }
+    .game {
+      justify-content: center;
+     
+    }
+
+    .box{ 
+        justify-content: center;
+        padding: 10px;
+    }
+    .play{
+      height: 10vh;
+      width: 10vh; 
+    }
+    .play-box{
+      height: 150px;
+      width: 250px;
+    }
+    .player-game-image, .computer-game-image{
+      height: 15vh;
+      width: 15vh;
+    }
+    .player-option{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .play{
+      font-size: 16px;
+    }
+    .pppp{
+      flex-direction: column;
+    }
   }
